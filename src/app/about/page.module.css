@@ -1,0 +1,462 @@
+.pageBanner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.pageBanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.aboutSection {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header Section */
+.headerSection {
+  padding: 4rem 0 0 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #063B67;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.2;
+}
+
+.quote {
+  max-width: 4xl;
+  margin: 0 auto;
+}
+
+.quoteText {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #063B67;
+  margin-bottom: 2rem;
+}
+
+.quoteAuthor {
+  font-size: 1.25rem;
+  color: #063B67;
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* Content Container */
+.contentContainer {
+  padding: 80px 0;
+}
+
+/* Content Blocks */
+.contentBlock {
+  margin-bottom: 60px;
+}
+
+/* Centered Content */
+.centeredContent {
+  text-align: center;
+}
+
+.centeredContent .bodyText {
+  text-align: center;
+}
+
+.bodyText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #063B67;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* Single Image Section */
+.singleImageContainer {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.singleImageContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Images Section */
+.imagesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 60px 0;
+}
+
+.imageLeft,
+.imageRight {
+  overflow: hidden;
+}
+
+.imageLeft img,
+.imageRight img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Highlight Box */
+.highlightBox {
+  background-color: #f8f9fa;
+  padding: 2.5rem;
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333333;
+  font-style: italic;
+  border-left: 4px solid #063B67;
+}
+
+/* Brush Image */
+.brushImageContainer {
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.brushImage {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  min-height: 200px;
+}
+
+.brushTextOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #063B67;
+  font-size: 1.125rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0 2rem;
+  width: 57%;
+  line-height: 1.6;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* Story Section */
+.storySection {
+  margin: 80px 0;
+}
+
+.storyHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.storyTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #063B67;
+  margin-bottom: 0.5rem;
+  font-family: 'Source Serif 4', serif;
+}
+
+.storySubtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+}
+
+.storyContent {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.storyContent .bodyText {
+  text-align: left;
+}
+
+.beliefStatement {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.beliefStatement p {
+  font-size: 1.5rem;
+  color: #063B67;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Final Image */
+.finalImageContainer {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.finalImageContainer img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Final Section */
+.finalSection {
+  margin-top: 60px;
+}
+
+.finalTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #063B67;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+    padding: 0 30px;
+  }
+  
+  .mainTitle {
+    font-size: 3.5rem;
+  }
+  
+  .storyTitle {
+    font-size: 2.75rem;
+  }
+  
+  .headerSection {
+    padding: 3.5rem 0;
+  }
+  
+  .contentContainer {
+    padding: 70px 0;
+  }
+  
+  .brushTextOverlay {
+    font-size: 1.125rem;
+    padding: 0 1.5rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    padding: 0 25px;
+  }
+  
+  .mainTitle {
+    font-size: 3rem;
+  }
+  
+  .storyTitle {
+    font-size: 2.5rem;
+  }
+  
+  .headerSection {
+    padding: 3rem 0;
+  }
+  
+  .contentContainer {
+    padding: 60px 0;
+  }
+  
+  .bodyText {
+    font-size: 0.95rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+  
+  .brushTextOverlay {
+    font-size: 1rem;
+    padding: 0 1.25rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  
+  .headerSection {
+    padding: 2.5rem 0;
+  }
+  
+  .contentContainer {
+    padding: 50px 0;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .storyTitle {
+    font-size: 2rem;
+  }
+  
+  .quoteText {
+    font-size: 1.125rem;
+  }
+  
+  .bodyText {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .sectionTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .imagesContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 40px 0;
+  }
+  
+  .singleImageContainer {
+    margin: 40px 0;
+  }
+  
+  .highlightBox {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+  
+  .beliefStatement p {
+    font-size: 1.125rem;
+  }
+  
+  .contentBlock {
+    margin-bottom: 40px;
+  }
+  
+  .storySection {
+    margin: 60px 0;
+  }
+  
+  .brushTextOverlay {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    width: 85%;
+    line-height: 1.5;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .headerSection {
+    padding: 2rem 0;
+  }
+  
+  .contentContainer {
+    padding: 40px 0;
+  }
+  
+  .mainTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .storyTitle {
+    font-size: 1.75rem;
+  }
+  
+  .quoteText {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quoteAuthor {
+    font-size: 1.125rem;
+  }
+  
+  .bodyText {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .singleImageContainer {
+    margin: 30px 0;
+  }
+  
+  .contentBlock {
+    margin-bottom: 30px;
+  }
+  
+  .storySection {
+    margin: 40px 0;
+  }
+  
+  .brushTextOverlay {
+    font-size: 0.85rem;
+    padding: 0 0.75rem;
+    width: 90%;
+    line-height: 1.4;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  .beliefStatement p {
+    font-size: 1rem;
+  }
+  
+  .finalTitle {
+    font-size: 1.125rem;
+  }
+} 

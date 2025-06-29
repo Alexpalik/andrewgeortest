@@ -1,0 +1,10 @@
+<div className="flex items-center gap-x-8">
+  <a href="/products" className="text-white font-medium hover:underline transition">Products</a>
+  <a href="/travel" className="text-white font-medium hover:underline transition">Travel & Experiences</a>
+  <a href="/how-it-works" className="text-white font-medium hover:underline transition">How It Works</a>
+  <a href="/funding" className="text-white font-medium hover:underline transition">Funding</a>
+  <a href="/events" className="text-white font-medium hover:underline transition">Events</a>
+  <a href="/inspiration" className="text-white font-medium hover:underline transition">Inspiration</a>
+  <a href="/invitations" className="text-white font-medium hover:underline transition">Invitations</a>
+  <a href="/registries" className="font-medium text-[#6ec1e4] hover:underline transition">Registry</a>
+</div> 

@@ -1,0 +1,39 @@
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  color: #1a365d;
+  font-family: 'Source Serif 4', serif;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+.subTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1.5rem 0 1rem;
+}
+
+.justifiedText {
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.bulletList {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+  line-height: 1.6;
+} 

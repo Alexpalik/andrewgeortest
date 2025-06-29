@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font Configuration for Gotham & Source Serif 4 */
+@layer base {
+  * {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  html {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  body {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  /* Headings use Source Serif 4 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-source-serif), 'Source Serif 4', serif;
+    font-size: inherit;
+    font-weight: 350;
+  }
+
+  /* Ensure serif class uses Source Serif 4 */
+  .font-serif {
+    font-family: var(--font-source-serif), 'Source Serif 4', serif !important;
+  }
+
+  /* Ensure sans class uses Gotham */
+  .font-sans {
+    font-family: 'Gotham', Arial, sans-serif !important;
+  }
+
+  /* Apply to common text elements */
+  p, span, div, a, button, input, textarea, select, label {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  /* Navigation and menu items */
+  nav, .nav, .menu {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  /* Form elements */
+  input, textarea, select, button {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  /* Tables */
+  table, th, td {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+  /* Lists */
+  ul, ol, li {
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  
+/* Gotham Font Family */
+.font-gotham {
+  font-family: 'Gotham', 'Helvetica Neue', 'Arial', sans-serif !important;
+}
+
+/* How It Works Page Specific Styles */
+.how-it-works-heading {
+  font-family: 'Gotham', 'Helvetica Neue', 'Arial', sans-serif !important;
+}
+
+/* .how-it-works h1,
+.how-it-works h2,
+.how-it-works h3,
+.how-it-works h4,
+.how-it-works h5,
+.how-it-works h6 {
+  font-family: 'Gotham', 'Helvetica Neue', 'Arial', sans-serif !important;
+} */
+
+.how-it-works .accordion-button {
+  font-family: 'Gotham', 'Helvetica Neue', 'Arial', sans-serif !important;
+}
+
+/* How It Works Page Styles */
+.text-36 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #1a365d;
+  font-weight: 500;
+  font-family: var(--font-source-serif), 'Source Serif 4', serif;
+}
+
+.text-gray {
+  color: #4a5568;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.text-dark-blue {
+  color: #1a365d;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.text-medium {
+  font-weight: 500;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.text-container {
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.page-banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-brush {
+  background-image: url('/how-it-works/brush-stroke.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.accordion {
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.accordion-item {
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1a365d;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .accordion-button {
+    padding: 1.5rem 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+.accordion-button::after {
+  content: '+';
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1a365d;
+  line-height: 1;
+  margin-left: 1rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.accordion-button.collapsed::after {
+  content: '+';
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: '−';
+}
+
+.accordion-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-collapse.show {
+  max-height: 2000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.accordion-body {
+  padding: 0 1.25rem 1.25rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .accordion-body {
+    padding: 0 2rem 2rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.button--skeleton {
+  border: 2px solid #1a365d;
+  color: #1a365d;
+  font-weight: 500;
+  border-radius: 4px;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.button--skeleton:hover {
+  background-color: #1a365d;
+  color: white;
+}
+
+.list-bulleted {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.list-bulleted li {
+  margin-bottom: 0.5rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+.mb-50 {
+  margin-bottom: 3.125rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.container {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+  

@@ -1,0 +1,113 @@
+.heroBanner {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f8fafc;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  text-align: center;
+  color: #1a365d;
+}
+
+.centeredText {
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stepsContainer {
+  margin-top: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.stepItem {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.stepItem:last-child {
+  margin-bottom: 0;
+}
+
+.stepText {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.highlight {
+  color: #3182ce;
+  font-weight: 600;
+}
+
+.bulletList {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.3rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .mainTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .centeredText {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .stepsContainer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .stepItem {
+    margin-bottom: 1rem;
+  }
+
+  .stepText {
+    font-size: 0.9rem;
+  }
+
+  .bulletList li {
+    font-size: 0.9rem;
+  }
+} 

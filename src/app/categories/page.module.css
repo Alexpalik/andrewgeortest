@@ -1,0 +1,157 @@
+.categoriesWrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #223366;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.frameCardWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 16px;
+  box-sizing: content-box;
+}
+
+.frameBg {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+  pointer-events: none;
+  transform: scale(1.08); /* Make frame slightly larger than card */
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1.5rem 0;
+  min-height: 320px;
+  width: 100%;
+  z-index: 2;
+  transition: box-shadow 0.2s;
+  margin: 0 auto;
+}
+
+.card:first-child {
+  border-color: #2a6cff;
+}
+
+.frameWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameWrapper > :global(img) {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: auto;
+  /* border-radius: 8px; */
+  overflow: hidden;
+  z-index: 2;
+  background: #f7fafd;
+  min-height: 0;
+}
+
+.label {
+  margin-top: 1.2rem;
+  font-family: 'Gotham', Arial, sans-serif;
+  font-size: 1rem;
+  color: #223366;
+  letter-spacing: 0.04em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+  .categoriesWrapper {
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem 0;
+    justify-items: center;
+  }
+  .categoriesWrapper {
+    padding: 0 2px;
+  }
+  .frameCardWrapper {
+    min-height: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    min-height: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imageWrapper {
+    min-height: 0;
+    height: 70%;
+    width: 70%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
+  .label {
+    font-size: 0.95rem;
+    margin-top: 0.7rem;
+    text-align: center;
+  }
+} 

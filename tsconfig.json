@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/storefront/lib/saleorClient.js", "src/app/api/client.js", "src/app/collection/page.jsx", "src/app/lib/checkoutHelpers.js", "src/app/lib/getCart.js", "src/app/lib/createCheckout.js", "src/app/lib/updateCartItems.js", "src/app/product/[slug]/page.jsx", "src/app/search/page.jsx", "src/components/TabFilters.jsx", "src/components/SectionGridFeatureItems.jsx", "src/components/ProductQuickView2.jsx", "src/components/ProductQuickView.jsx", "src/components/ProductCard.jsx", "src/components/SectionSliderProductCard.jsx", "src/app/cart/page.jsx", "src/components/NotifyAddTocart.jsx", "src/app/(accounts)/account-savelists/page.jsx", "src/app/(accounts)/account-registry/page.jsx"],
+  "exclude": ["node_modules"]
+}
