@@ -16,12 +16,12 @@ export default function AboutUs() {
       {/* Header Section with Background */}
       <section className={styles.headerSection}>
         <div className={styles.container}>
-          <h1 className={styles.mainTitle}>Σχετικά με Εμάς</h1>
+          <h1 className={styles.mainTitle}>About us</h1>
           <div className={styles.quote}>
             <p className={styles.quoteText}>
-              "Οι δύο πιο σημαντικές μέρες στη ζωή σου είναι η μέρα που γεννιέσαι και η μέρα που μαθαίνεις το γιατί."
+            Here the registry becomes an interactive tool of communication between you and your guests, a platform to express emotions, to give and to support. You can create your own list in the simple steps below
             </p>
-            <p className={styles.quoteAuthor}>Μαρκ Τουέιν</p>
+           
           </div>
         </div>
       </section>
@@ -33,16 +33,16 @@ export default function AboutUs() {
             {/* First Content Block - Centered */}
             <div className={`${styles.contentBlock} ${styles.centeredContent}`}>
               <p className={styles.bodyText}>
-                Οι αμέσως επόμενες πιο σημαντικές μέρες είναι αυτές στις οποίες ανταλλάσσονται στιγμές αγάπης και φροντίδας ανάμεσα σε εσένα και τους αγαπημένους σου, μια πλατφόρμα εκδήλωσης συναισθημάτων, προσφοράς και υποστήριξης.
+              The next most important days are those filled with moments of reciprocated love and care between you and your loved ones.
               </p>
               <p className={styles.bodyText}>
-                Και όλοι μας έχουμε ιδιαίτερες μέρες που νιώθουμε ιδιαίτερα την ανάγκη να εκφράσουμε ή να λάβουμε αγάπη, αναγνώριση και απόλυτη υποστήριξη.
+              And we all have special days when we particularly feel the need to express or receive love, recognition and ultimate support.
               </p>
               <p className={styles.bodyText}>
-                Υπάρχουν δύο είδη «αποστάσεων» για αυτούς που θέλουν να γιορτάσουν μια σημαντική στιγμή τους, με φίλους και συγγενείς: Πρώτον, η γεωγραφική απόσταση. Δεύτερον, η συναισθηματική απόσταση λόγω διστακτού, που δεν επιτρέπει πολλές φορές να εκφράσουμε ελεύθερα τα συναισθήματά μας. Αυτά τα είδη των «αποστάσεων» φιλοδοξούμε να καλύψουμε στην GrantDays.
+              There are two kinds of “distances” for those who want to celebrate an important moment with friends and relatives: First, the geographical distance. Second, the emotional distance due to hesitation, which often does not allow us to express our feelings freely. Those kinds of “distances” we aspire to cover at Grantdays.
               </p>
               <p className={styles.bodyText}>
-                Είτε επιθυμείς να συνδράμεις τους αγαπημένους σου, είτε εσύ προσδοκάς τη δική τους συνδρομή, το GrantDays village ανοίγει τις πόρτες του ως το μέρος που η έννοια του δώρου παίρνει μια βαθύτερη διάσταση, αυτή της προσφοράς (GRANTING).
+              Either you wish to give as a giver, or you expect to receive as a receiver, you are welcome to GrantDays village, a place where gifting takes a deeper dimension, the one of GRANTING.
               </p>
             </div>
 
@@ -56,15 +56,18 @@ export default function AboutUs() {
 
             {/* Second Content Block - Centered */}
             <div className={`${styles.contentBlock} ${styles.centeredContent}`}>
-              <h2 className={styles.sectionTitle}>Στην GrantDays γιορτάζουμε τις ξεχωριστές ημέρες της ζωής μας</h2>
+              <h2 className={styles.sectionTitle}>At GrantDays we celebrate the special days of our life</h2>
               <p className={styles.bodyText}>
-                Αυτές τις ημέρες που ο καθένας μας θεωρεί μοναδικές και κάθε δώρο που θα δεχτούμε ή θα προσφέρουμε μπορεί να μετατραπεί σε μια γενναιόδωρη χορηγία, αφού πιστεύουμε πραγματικά ότι η προσφορά είναι έκφραση ισχυρών συναισθημάτων και ανιδιοτελούς υποστήριξης. Διαπιστώσαμε ότι η ανεμπόδιστη και χωρίς taboo επικοινωνία μεταξύ του εορτάζοντα/διοργανωτή και των καλεσμένων μπορεί να απογειώσει τη διαδικασία και να γίνει το λίπασμα που χρειάζεται για να καλλιεργηθεί το γόνιμο έδαφος των ισχυρών δεσμών μεταξύ τους. Μία διαδραστική επικοινωνία κατά την οποία ο πρώτος μπορεί να μοιράζεται τις ανάγκες και προτιμήσεις του και οι δεύτεροι μπορούν να επιλέξουν ή να αντιπροτείνουν πώς να συνεισφέρουν.
-              </p>
+              Those days that each of us considers unique and every gift we receive or offer can be turned into a generous sponsorship, since we genuinely believe that giving is an expression of strong emotions and selfless support.    
+              </p> 
+                
               <p className={styles.bodyText}>
-                Μετά από πολλές συζητήσεις, αναλύσεις και αναζητήσεις πολλών σχετικών περιπτώσεων, διαπιστώσαμε ότι η ανεμπόδιστη και χωρίς taboo επικοινωνία μεταξύ του εορτάζοντα/διοργανωτή και των καλεσμένων μπορεί να απογειώσει τη διαδικασία και να γίνει το λίπασμα που χρειάζεται για να καλλιεργηθεί το γόνιμο έδαφος των ισχυρών δεσμών μεταξύ τους. Μία διαδραστική επικοινωνία κατά την οποία ο πρώτος μπορεί να μοιράζεται τις ανάγκες και προτιμήσεις του και οι δεύτεροι μπορούν να επιλέξουν ή να αντιπροτείνουν πώς να συνεισφέρουν.
+              After many discussions, a lot of analysis and searching of many relevant cases, we found that unhindered and taboo-free communication between the person who celebrates/the organiser and the guests can elevate the process and become the fertiliser needed to cultivate the fertile ground of strong bonds between them. An interactive communication in which the former can share their needs and preferences and the latter can choose or counter-suggest how to contribute.
+              So, we invite you to put on your most “Grant” mood and join us in a special narrative about the vision and idea behind GrantDays!
               </p>
 
-              <div className={styles.brushImageContainer}>
+              
+              <div className={styles.brushImageContainer} style={{display:'none'}}>
                 <img 
                   src="/images/BRUSH 2.png" 
                   alt="Grant διάθεση message"
@@ -74,29 +77,41 @@ export default function AboutUs() {
                   Σε προσκαλούμε λοιπόν να φορέσεις την πιο «Grant» διάθεσή σου και να μας ακολουθήσεις σε μία ιδιαίτερη αφήγηση σχετικά με το όραμα και την ιδέα που κρύβεται μέσα στην GrantDays!
                 </div>
               </div>
-            </div>
+            </div> 
+              
+
+
 
             {/* Story Section */}
             <div className={styles.storySection}>
               <div className={styles.storyHeader}>
-                <h2 className={styles.storyTitle}>Η Ιστορία μας</h2>
+                <h2 className={styles.storyTitle}>Our Story</h2>
               </div>
               
               <div className={styles.storyContent}>
-                <div style={{fontSize: '1.25rem'}} className={styles.bodyText}>Πώς ξεκίνησαν όλα...</div>
+                <div style={{fontSize: '1.25rem', color:'#063B67' , fontWeight:'500'}} className={styles.bodyText}>How it all started…</div>
 
-                <p className={styles.bodyText}>
-                  Κάποια στιγμή, κάποιοι από εμάς έχουν προσκληθεί στο γάμο ενός φίλου ή ενός συγγενή και μας ζητήθηκε ευγενικά να συμμετέχουμε στη λίστα του γάμου τους, σε περίπτωση που επιθυμούσαμε να συμβάλουμε στο νέο τους ξεκίνημα με μια μικρή βοήθεια. 4 φορές επίσκεψη. Και ποιες στον απελπισμένο που λόγω επαγγελματικών στο κάτω μέρος της προσφοράς, εμείς. ή ενός συγγενή στου που περιστάσημα στο κάτω μέρος της προσφοράς καυστημα και επίσημα μπορεί να αισθανθήκαμε λίγο άβολα όταν μπορούσαμε να συνεισφέρουμε μόνο τόσο, είτε επειδή αυτό ήταν το ποσό που μπορούσαμε να διαθέσουμε εκείνη τη στιγμή είτε επειδή απλώς τόσο θέλαμε να συνεισφέρουμε.
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                At some point, some of us have been invited to the wedding of a friend or a relative and been politely asked to participate in their wedding list in case we wished to contribute to their new beginning with a little help.
                 </p>
-                <p className={styles.bodyText}>
-                  Κάποιοι από εμάς υπήρξαν το ζευγάρι που παντρεύτηκε και παρόλο που χρειαζόμασταν την οικονομική υποστήριξη, όπως σχεδόν κάθε ζευγάρι για το νέο του ξεκίνημα, νιώθαμε κάπως άβολα να τη ζητήσουμε από την οικογένεια και τους φίλους μας και περιστάσεις στον τραπεζικό λογαριασμό που αναγραφόταν στο κάτω μέρος της προσφοράς και ε. Ίσως επίσης να νιώσαμε αρκετά πιεσμένοι και απογοητευμένοι που έπρεπε να καταβάλουμε τόση προσπάθεια για τη δημιουργία της δικής μας "λίστας γάμου", επειδή δεν υπήρχε "ένα μέρος που να τα έχει όλα", ώστε να επιλέξουν οι καλεσμένοι μας το δώρο τους εύκολα και βολικά. Και σε κάποιες άλλες στιγμές ορόσημο στη ζωή μας, κάποιοι από εμάς αναρωτήθηκαν... "Είναι ένας γάμος το μόνο μεγάλο γεγονός που αξίζει αγάπη και υποστήριξη;"
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                Some of us have visited the pre-selected shop and chosen one of the gifts in the list or deposited an amount in the bank account written at the bottom of the invitation. Some of us might have felt a bit uncomfortable when we could only contribute as much, either because that was what we could afford at that time or because that was what we simply wanted to contribute.
                 </p>
-                <p className={styles.bodyText}>
-                  Στην παράδοσή μας υπάρχει, να συγκεντρώνομαστε για να γιορτάσουμε σημαντικές στιγμές, νέα ξεκινήματα, μεγάλα επιτεύγματα... Όμορφη παράδοση!
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                Some of us were the couple who got married and although we needed financial support, like almost every couple for their new beginning, we felt somewhat uncomfortable asking our family and friends for it. Perhaps we also felt quite stressed and frustrated that we had to put so much effort into creating our own "wedding registry" because there was no "one place that had it all" for our guests to choose their gift easily and conveniently.
+                </p>
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                And at other milestone moments in our lives, some of us have wondered… "Is a wedding the only big event worthy of love and support?"
+                </p>
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                Our tradition has it that people come together to celebrate important moments, new beginnings, big achievements or recognitions… Beautiful tradition!
+                </p>
+                <p className={styles.bodyText} style={{marginBottom:0}}>
+                At GrantDays we believe that beautiful traditions should be protected and continued…
                 </p>
               </div>
 
-              <div className={styles.beliefStatement}>
+              <div className={styles.beliefStatement} style={{display:'none'}}>
                 <p>Στην GrantDays πιστεύουμε ότι οι όμορφες παραδόσεις πρέπει να</p>
                 <p>διαφυλάσσονται και να συνεχίζονται...</p>
               </div>
@@ -112,12 +127,12 @@ export default function AboutUs() {
 
             {/* Final Section */}
             <div className={styles.finalSection}>
-              <div className={styles.finalTitle}>Είμαστε εδώ για εσένα</div>
-              <p className={styles.bodyText}>
-                Γιατί... Είμαστε εδώ για να προσθέσουμε μια δημιουργική πινελιά, να απελευθερώσουμε τις δυνατότητες της παραδοσιακής "λίστας γάμου" και να δημιουργήσουμε κάτι πολύ μεγαλύτερο, εμπνευσμένο από συναισθήματα και αγάπη, χωρίς ταμπού και προσωπικούς περιορισμούς. Μπορείς είθε για να δοθούμε να προσθέσουμε μετά δημιουργική πινελιά, να απελευθερώσουμε τις δυνατότητες της παραδοσιακής "λίστας γάμου" και να δημιουργήσουμε κάτι πολύ μεγαλύτερο, εμπνευσμένο από συναισθήματα και αγάπη, χωρίς ταμπού και προσωπικούς περιορισμούς.
+              <div className={styles.finalTitle}>We are here for you</div>
+              <p className={styles.bodyText} style={{marginBottom:0}}>
+              Therefore... We are here to add a creative spin, unleash the potential of the traditional “wedding list” and create something much bigger, inspired by emotions and love, without taboos and personal constraints.
               </p>
               <p className={styles.bodyText}>
-                Είμαστε εδώ για να σε βοηθήσουμε να δημιουργήσεις οποιοδήποτε είδος λίστας δώρων χρειάζεσαι, εστιάζοντας στις χαρισματικές ανθρώπινες αξίες της προσφοράς και της υποστήριξης... ή σε αυτό που μας αρέσει να αποκαλούμε GRANTING!
+              We are here to help you create any type of registry (gift list) you need, focusing on the charismatic human values of giving and support… or on what we like to call GRANTING!
               </p>
             </div>
           </div>
