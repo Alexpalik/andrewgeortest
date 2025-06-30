@@ -60,18 +60,26 @@ const DiscoverMoreSlider: React.FC = () => {
     <div className="w-full">
 
       {/* Carousel Arrows */}
-      <div className="flex justify-end mb-4 space-x-2 ">
+      <div className="flex justify-end mb-4 space-x-2">
         <button
           onClick={() => scroll("left")}
-          className="p-2 bg-gray-200 hover:bg-gray-300"
+          className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors"
+          aria-label="Previous"
         >
-          ←
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 19L5 12L12 5" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </button>
         <button
           onClick={() => scroll("right")}
-          className="p-2 bg-gray-200 hover:bg-gray-300"
+          className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors"
+          aria-label="Next"
         >
-          →
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </button>
       </div>
 

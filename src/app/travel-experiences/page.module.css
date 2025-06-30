@@ -1,0 +1,297 @@
+.pageBanner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.pageBanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header Section */
+.headerSection {
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 400;
+  color: #063B67;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #5E5E5E;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Travel Packages Section */
+.packagesSection {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #063B67;
+  margin-bottom: 1.5rem;
+  font-family: 'Source Serif 4', serif;
+}
+
+.packageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sortOrder {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.sortOrderSelect {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  color: #4a5568;
+  background-color: white;
+}
+
+/* My Trip Section */
+.myTripSection {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.myTripContent {
+  padding-right: 2rem;
+}
+
+.myTripTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #063B67;
+  margin-bottom: 1.5rem;
+  font-family: 'Source Serif 4', serif;
+}
+
+.myTripSubtitle {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.myTripText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.myTripNote {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.myTripInput {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #4299e1;
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.myTripButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4299e1;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.myTripImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.myTripImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.packageCard {
+  position: relative;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.packageImage {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.packageImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.packageActions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.wishlistButton, .quickViewButton {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.packageContent {
+  padding: 1rem;
+}
+
+.packageTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.packagePrice {
+  font-size: 16px;
+  font-weight: 500;
+  color: #063B67;
+  margin-bottom: 0.5rem;
+}
+
+.packageDescription {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.packageDuration {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #718096;
+}
+
+.durationIcon {
+  margin-right: 0.5rem;
+}
+
+.packageButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.addToCartButton, .addToListButton {
+  flex: 1;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.addToCartButton {
+  background-color: #063B67;
+  color: white;
+}
+
+.addToListButton {
+  background-color: white;
+  border: 1px solid #063B67;
+  color: #063B67;
+}
+
+@media (max-width: 1024px) {
+  .packageGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .packageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .myTripSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .myTripContent {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .packageGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+} 

@@ -2,6 +2,10 @@
 
 import React, { useRef } from "react"
 
+
+
+{/* This is how you add comments inside JSX/React components */}
+
 const BaptismAndBabyShowerSection = () => {
   const baptismCarouselRef = useRef(null)
   const babyShowerCarouselRef = useRef(null)
@@ -40,7 +44,7 @@ const BaptismAndBabyShowerSection = () => {
   const ProductCarousel = ({ products, carouselRef, title }) => (
     <div className="mt-8">
       {/* Carousel Navigation */}
-      <div className="flex justify-end mb-4 space-x-2 ">
+      {/* <div className="flex justify-end mb-4 space-x-2 ">
         <button
           onClick={() => scroll(carouselRef, "left")}
           className="p-2 bg-gray-200 hover:bg-gray-300"
@@ -53,7 +57,7 @@ const BaptismAndBabyShowerSection = () => {
         >
           →
         </button>
-      </div>
+      </div> */}
 
       {/* Products Carousel */}
       <div className="overflow-hidden">
@@ -95,26 +99,26 @@ const BaptismAndBabyShowerSection = () => {
       {/* Static Category Cards - Side by Side */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Baptism Card */}
-        <div className="relative overflow-hidden group">
-          <img
+        <div className="relative overflow-hidden group" style={{ aspectRatio: '1/1'}}>
+          <img style={{ height:'100%'}}
             src="/images/wedding.png"
             alt="Baptism list inspiration"
             className="w-full h-[400px] object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          <div className="absolute inset-0"></div>
 
           {/* Text Content */}
-          <div className="absolute top-8 left-8 text-white max-w-[80%] space-y-3">
+          <div className="absolute top-8 left-8 text-white max-w-[80%] space-y-3" style={{ padding:'30px'}}>
             <h3 
               className="text-2xl lg:text-3xl font-light leading-tight" 
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif" , fontSize:'55px', lineHeight:'1.1'}}
             >
               Baby shower<br />
               list inspiration
             </h3>
             <p 
               className="text-sm font-light" 
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif" ,  fontSize:'20px'}}
             >
               With Ciseco you will get freeship &<br />
               savings combo...
@@ -125,7 +129,7 @@ const BaptismAndBabyShowerSection = () => {
           <div className="absolute bottom-8 left-8">
             <button 
               className="bg-[#063B67] text-white text-sm px-5 py-2 hover:bg-[#052d4a] transition-colors"
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif", fontSize:'16px' , padding:'15.5px 24px' , marginLeft:'30px', marginBottom:'50px' }}
             >
               Μάθε περισσότερα
             </button>
@@ -134,25 +138,25 @@ const BaptismAndBabyShowerSection = () => {
 
         {/* Baby Shower Card */}
         <div className="relative overflow-hidden group">
-          <img
+          <img style={{ height:'100%'}}
             src="/images/baby.png"
             alt="Baby shower list inspiration"
             className="w-full h-[400px] object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          <div className="absolute inset-0  "></div>
 
           {/* Text Content */}
-          <div className="absolute top-8 left-8 text-white max-w-[80%] space-y-3">
+          <div className="absolute top-8 left-8 text-white max-w-[80%] space-y-3" style={{ padding:'30px'}}>
             <h3 
               className="text-2xl lg:text-3xl font-light leading-tight" 
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif" , fontSize:'55px', lineHeight:'1.1'}}
             >
               Baby shower<br />
               list inspiration
             </h3>
             <p 
               className="text-sm font-light" 
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif", fontSize:'20px' }}
             >
               With Ciseco you will get freeship &<br />
               savings combo...
@@ -163,7 +167,7 @@ const BaptismAndBabyShowerSection = () => {
           <div className="absolute bottom-8 left-8">
             <button 
               className="bg-[#063B67] text-white text-sm px-5 py-2 hover:bg-[#052d4a] transition-colors"
-              style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+              style={{ fontFamily: "'Gotham', Arial, sans-serif", fontSize:'16px' , padding:'15.5px 24px' , marginLeft:'30px', marginBottom:'50px' }}
             >
               Μάθε περισσότερα
             </button>

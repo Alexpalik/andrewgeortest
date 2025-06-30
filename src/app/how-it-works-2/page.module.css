@@ -1,0 +1,159 @@
+.pageBanner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.pageBanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.mainTitle {
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #063B67;
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.highlight{
+  color: #61C5C3;
+}
+/* Header Section */
+.headerSection {
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #5E5E5E;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Content Section */
+.contentSection {
+  padding: 2rem 0 5rem;
+  background-color: #ffffff;
+  
+}
+
+.contentBlock {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #063B67;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-family: 'Source Serif 4', serif;
+}
+
+.bodyText {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5E5E5E;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.stepTitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: #063B67;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  text-align: left;
+}
+
+.listItem {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.listItemBullet {
+  margin-right: 10px;
+  color: #063B67;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.listItemText {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5E5E5E;
+}
+
+.ctaButton {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0;
+  padding: 12px 30px;
+  background-color: #063B67;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #052a4a;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .mainTitle {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 30px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+    line-height: 26px;
+  }
+} 
