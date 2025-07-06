@@ -238,13 +238,27 @@ export default function CartDropdown() {
           <>
             {/* Cart Icon Button */}
             <PopoverButton
-              className="h-10 sm:w-12 sm:h-12 rounded-none flex items-center justify-center relative text-white focus:outline-none cursor-pointer"
-              onClick={() => {
-                if (!isMobile) handleDropdownOpen();
-              }}
-            >
-              <Image src="/svg/cart.svg" alt="Cart" width={24} height={24} />
-            </PopoverButton>
+     className="h-10  sm:h-12 rounded-none flex items-center justify-center relative text-white focus:outline-none cursor-pointer"
+     onClick={() => {
+       if (!isMobile) handleDropdownOpen();
+     }}
+   >
+     <Image src="/svg/cart2.svg" alt="Cart" width={24} height={24} />
+     <span
+       className="absolute -top-0.5 -right-2 bg-[#19A7CE] text-white text-xs  px-1 flex items-center justify-center"
+       style={{
+         minWidth: '18px',
+         height: '18px',
+         fontSize: '14px',
+         fontWeight: 500,
+         display: 'flex',
+         alignItems: 'center',
+         justifyContent: 'center',
+       }}
+     >
+       {checkout?.lines?.length ?? 0}
+     </span>
+   </PopoverButton>
 
             {!isMobile && (
             <Transition

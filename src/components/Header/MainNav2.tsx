@@ -18,8 +18,20 @@ const MainNav2: FC<MainNav2Props> = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const router = useRouter();
   const handleLogoClick = () => {
-  router.push("/");
-  };  
+    router.push("/");
+  };
+  const redirect = () => {
+    window.location.assign('/login');
+  };
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?query=${encodeURIComponent(searchQuery)}`);
+      setShowSearchForm(false);
+    }
+  };
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const renderMagnifyingGlassIcon = () => {
@@ -49,22 +61,12 @@ const MainNav2: FC<MainNav2Props> = () => {
     );
   };
 
-  const redirect = () => {
-    window.location.assign('/login');
-  };
-
   const renderSearchForm = () => {
     return (
       <div className="relative flex-1 py-2 text-black">
         <form
           className="flex items-center space-x-1.5 px-5 h-full rounded bg-slate-50 relative"
-          onSubmit={(e) => {
-            e.preventDefault();
-            if (searchQuery.trim()) {
-              router.push(`/search?query=${encodeURIComponent(searchQuery)}`);
-              setShowSearchForm(false);
-            }
-          }}
+          onSubmit={handleSearchSubmit}
         >
           <input
             type="text"
@@ -307,41 +309,105 @@ const MainNav2: FC<MainNav2Props> = () => {
   };
   
 
-  return (
-    <div
-      style={{ backgroundColor: '#063B67' }}
-      className="nc-MainNav2 relative z-10 dark:bg-neutral-900 border-b border-slate-100 dark:border-slate-700 text-white"
-    >
-      <div className="container">{renderContent()}</div>
-      {isMobileMenuOpen && (
-         <div className="fixed inset-0 bg-black bg-opacity-50 z-40 flex justify-end">
-            <div className="bg-white w-3/4 max-w-xs h-full p-6 relative flex flex-col">
-              {/* Close button */}
-              <button
-                className="absolute top-4 right-4 text-gray-800"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <XMarkIcon className="h-6 w-6" />
-              </button>
+  // Main (top) menu items
+  const mainMenuItems = [
+    { label: 'Γάμος', href: '#' },
+    { label: 'Βάπτιση', href: '#' },
+    { label: 'Special moments', href: '#' },
+    { label: 'Προσωπικές αγορές', href: '#' },
+  ];
 
-              {/* Mobile Navigation Links */}
-              <div className="mt-16 space-y-6 text-[#063B67] font-serif text-lg">
-                <a href="/" onClick={() => setIsMobileMenuOpen(false)} className="block">
-                  Home
-                </a>
-                <a href="/collection" onClick={() => setIsMobileMenuOpen(false)} className="block">
-                  Collections
-                </a>
-                <a href="/gift-registry" onClick={() => setIsMobileMenuOpen(false)} className="block">
-                  Gift Registry
-                </a>
-                <a href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block">
-                  Contact
-                </a>
-              </div>
-            </div>
+  // Secondary (bottom) menu items
+  const secondaryMenuItems = [
+    { label: 'Προϊόντα', href: '#' },
+    { label: 'Ταξίδια & Εμπειρίες', href: '#' },
+    { label: 'Χρηματικά Δώρα', href: '#' },
+    { label: 'Έτοιμες Λίστες', href: '#' },
+  ];
+
+  return (
+    <div className="w-full">
+      {/* Main header */}
+      <div
+        style={{ backgroundColor: '#0A3A65' }}
+        className="w-full border-b border-white"
+      >
+        <div className="container mx-auto flex items-center justify-between h-[96px] px-4">
+          {/* Logo */}
+          <div className="flex-1 flex justify-center lg:justify-start">
+            <Logo className="flex-shrink-0" />
           </div>
-      )}
+          {/* Main menu */}
+          <nav className="flex-1 flex justify-center">
+            <ul className="flex gap-8 items-center text-base whitespace-nowrap">
+              {mainMenuItems.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="text-white text-lg font-normal hover:underline transition-all whitespace-nowrap"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          {/* Icons */}
+          <div className="flex-1 flex justify-end items-center gap-8">
+            {/* Search Icon */}
+            {!showSearchForm && (
+              <button className="bg-transparent border-none p-0 m-0 flex items-center" aria-label="Search" onClick={() => setShowSearchForm(true)}>
+                <img src="/svg/search2.svg" alt="Search" className="w-6 h-6" />
+              </button>
+            )}
+            {/* Search Form */}
+            {showSearchForm && (
+              <form onSubmit={handleSearchSubmit} className="flex items-center space-x-1.5 px-2 h-10 rounded bg-white relative">
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  className="border-none bg-transparent focus:outline-none focus:ring-0 w-full text-base text-black placeholder-black"
+                  autoFocus
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <button type="button" onClick={() => setShowSearchForm(false)} className="text-black hover:text-gray-700 focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 8.586l4.95-4.95a1 1 0 111.414 1.414L11.414 10l4.95 4.95a1 1 0 01-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 01-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 011.414-1.414L10 8.586z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </form>
+            )}
+            {/* User Icon */}
+            <button className="bg-transparent border-none p-0 m-0 flex items-center" aria-label="Account" onClick={redirect}>
+              <img src="/svg/acoount2.svg" alt="Account" className="w-6 h-6" />
+            </button>
+            {/* Cart Icon */}
+            <CartDropdown />
+          </div>
+        </div>
+      </div>
+      {/* Secondary bar */}
+      <div style={{ backgroundColor: '#DDF2F8' }} className="w-full">
+        <div className="container mx-auto flex justify-center items-center h-[48px] px-4">
+          <nav className="flex gap-0 items-center w-full justify-center">
+            {secondaryMenuItems.map((item, idx) => (
+              <React.Fragment key={item.label}>
+                <a
+                  href={item.href}
+                  className="text-[#0A3A65] text-base font-normal px-4 whitespace-nowrap text-sm"
+                  style={{ fontFamily: 'inherit' }}
+                >
+                  {item.label}
+                </a>
+                {idx < secondaryMenuItems.length - 1 && (
+                  <span className="h-6 border-l border-[#0A3A65] mx-1" />
+                )}
+              </React.Fragment>
+            ))}
+          </nav>
+        </div>
+      </div>
     </div>
   );
 };
