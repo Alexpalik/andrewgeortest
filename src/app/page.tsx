@@ -31,22 +31,29 @@ function PageHome() {
       <RichTextSection/>
 
       {/* Discover More FULL WIDTH */}
-      <div className="mt-24 lg:mt-10">
-        <div className="container">
+      <div className="mt-24 lg:mt-10 space-y-6 my-12 lg:space-y-8 lg:my-20">
+        <div className="container" style={{ maxWidth: "1736px" }}>
           <DiscoverMoreSlider />
         </div>
       </div>
-
-      {/* Now all inside same container */}
-      <div className="container space-y-6 my-12 lg:space-y-8 lg:my-20">
-        <MoreExperiencesSection />
-        <SectionPromo3 />
-        <BaptismAndBabyShowerSection />
-        <HowGiftListWorksSection />
-        <ShopTheLookSection />
-        <ShopByDepartmentSection/>
+      <div className="container space-y-6 my-12 lg:space-y-8 lg:my-20" style={{ maxWidth: "1736px" }}>
+      <MoreExperiencesSection />
+      <SectionPromo3 />
       </div>
-
+      <div className="container space-y-6 my-12 lg:space-y-8 lg:my-20" style={{ maxWidth: "1920px" }}>
+         <BaptismAndBabyShowerSection />
+      </div>
+      <div className="container mt-24 mb-24 space-y-6 my-12 lg:space-y-8 lg:my-20" style={{ maxWidth: "1736px" }}>
+        <HowGiftListWorksSection />
+      </div>
+      <div className="container mt-24 space-y-6 my-12 lg:space-y-8 lg:my-20" style={{ maxWidth: "1736px" }}>
+          <ShopTheLookSection />
+      </div>
+      <div className="container mt-24 space-y-6 my-12 lg:space-y-8 lg:my-20" style={{ maxWidth: "1736px" }}>
+         <ShopByDepartmentSection/>
+      </div>
+      
+      
       {/* Future sections, also inside container */}
       {/* 
       <div className="container space-y-24 my-24 lg:space-y-32 lg:my-32">

@@ -13,16 +13,16 @@ export default function GiftCardsSection() {
           </div>
         </div>
         {/* Right Box */}
-        <div className="card" style={{ backgroundImage: "url('/images/WEDDING 1.png')" }}>
+        <div className="card" style={{ backgroundImage: "url('/images/WEDDING 4.png')" }}>
           <div className="cardContent">
             <h2 className="cardTitle">Δωροκάρτα Grant days<br />διαχρονική και<br />ανεκτίμητη</h2>
             <p className="cardSubtitle">With Ciseco you will get freeship & savings combo...</p>
             <div className="cardCtas">
-            <Link href="/cart" legacyBehavior>
-                <a className="ctaBlue">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</a>
-                </Link>
                 <Link href="/wishlist" legacyBehavior>
-                <a className="ctaWhite">ΠΡΟΣΘΗΚΗ ΣΤΗ ΛΙΣΤΑ</a>
+                <a className="ctaBlue">ΠΡΟΣΘΗΚΗ ΣΤΗ ΛΙΣΤΑ</a>
+                </Link>
+                <Link href="/cart" legacyBehavior>
+                <a className="ctaWhite">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</a>
                 </Link>
             </div>
           </div>
@@ -31,9 +31,9 @@ export default function GiftCardsSection() {
       <style jsx>{`
         .cardsGrid {
           display: flex;
-          gap: 15px;
+          gap: 25px;
           justify-content: center;
-          max-width: 100rem;
+          
           margin-left: auto;
           margin-right: auto;
     
@@ -107,7 +107,7 @@ export default function GiftCardsSection() {
         }
         @media (max-width: 2000px) {
           .card {
-            width: 48vw;
+            
             max-width: 950px;
             min-width: 320px;
             height: 50vw;

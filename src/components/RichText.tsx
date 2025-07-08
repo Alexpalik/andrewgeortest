@@ -5,7 +5,7 @@ import React from "react";
 const RichTextSection = () => {
   return (
     <div className="container w-full mt-14 px-8 flex justify-center">
-      <div className="max-w-3xl text-left text-[#000000] space-y-6 leading-relaxed" style={{ fontFamily: "'Gotham', Arial, sans-serif" }}>
+      <div className="max-w-2xl text-left text-[#000000] space-y-6 leading-relaxed" style={{ fontFamily: "'Gotham', Arial, sans-serif" }}>
         <p>
         The most important days in your life are those filled with moments of reciprocated love and care between you and your loved ones.
 

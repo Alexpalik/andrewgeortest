@@ -87,7 +87,7 @@ const DiscoverMoreSlider: React.FC = () => {
       <div className="lg:hidden overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6"
+          className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-[3.5rem]"
         >
         {items.map((item, index) => (
           <div
@@ -129,7 +129,7 @@ const DiscoverMoreSlider: React.FC = () => {
       <div className="hidden lg:block overflow-hidden ">
         <div
           ref={scrollContainerRef}
-          className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6"
+          className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-[2rem]"
           style={{ scrollSnapType: 'x mandatory' }}
         >
           {items.map((item, index) => (

@@ -11,7 +11,7 @@ export default function Events() {
           src="https://cdn11.bigcommerce.com/s-fw54kk4zpe/images/stencil/original/image-manager/hero-image-events-to-celebrate-1.png?t=1699618332"
           alt="Celebrate Image"
           className="w-full"
-          style={{ maxHeight: '500px', objectFit: 'cover' }}
+          style={{ maxHeight: '611px', objectFit: 'cover' }}
         />
       </div>
       

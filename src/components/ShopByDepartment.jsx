@@ -107,7 +107,13 @@ const ShopByDepartmentSection = () => {
   return (
     <div className="w-full mt-20 ">
       {/* Heading and Arrows */}
-      
+      <Heading 
+        className="text-[#063B67] mb-10" 
+        fontClass="text-3xl md:text-4xl"
+        style={{ fontFamily: "'Gotham', Arial, sans-serif" }}
+      >
+        Best Sellers
+      </Heading>
 
       {/* Carousel */}
       <div

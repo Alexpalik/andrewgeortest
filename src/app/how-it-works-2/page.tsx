@@ -12,7 +12,7 @@ export default function HowItWorks2() {
           src="https://cdn11.bigcommerce.com/s-fw54kk4zpe/product_images/uploaded_images/hero-image-how-it-works-1.png"
           alt="How It Works Hero"
           className="w-full"
-          style={{ maxHeight: '400px', objectFit: 'cover' }}
+          style={{ maxHeight: '611px', objectFit: 'cover' }}
         />
       </div>
 
@@ -21,8 +21,8 @@ export default function HowItWorks2() {
         <div className={styles.container}>
           <h1 className={styles.mainTitle}>How the Registry works</h1>
           <p className={styles.subtitle}>
-            Here the registry becomes an interactive tool of communication between you and
-            your guests, a platform to express emotions, to give and to support.
+            Here the registry becomes an interactive tool of communication between you  <br />and
+            your guests, a platform to express emotions, to give and to support. <br />
             You can create your own list in the simple steps below
           </p>
         </div>

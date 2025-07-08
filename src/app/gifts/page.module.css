@@ -1,8 +1,7 @@
 .giftBanner {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust as needed */
-    max-width: 100rem;
+    max-height: 611px; /* Adjust as needed */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -18,7 +17,7 @@
   
   .giftBannerText {
     position: absolute;
-    left: 40px;
+    left: 100px;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;

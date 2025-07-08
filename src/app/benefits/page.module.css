@@ -8,11 +8,11 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 611px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1248px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -28,7 +28,7 @@
   font-size: 46px;
   font-weight: 400;
   color: #063B67;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-family: 'Source Serif 4', serif;
   line-height: 1.2;
@@ -55,6 +55,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 60px;
+  border-top: 1px solid #E2E8F0;
+    padding-top: 80px;
 }
 
 .benefitItem {

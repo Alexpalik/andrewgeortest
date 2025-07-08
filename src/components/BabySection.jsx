@@ -69,7 +69,7 @@ const BaptismAndBabyShowerSection = () => {
           {Array.from({ length: Math.ceil(products.length / 3) }).map((_, groupIndex) => (
             <div
               key={groupIndex}
-              className="flex-shrink-0 flex gap-6 snap-start"
+              className="flex-shrink-0 flex  snap-start"
               style={{ width: '100%' }}
             >
               {products
@@ -99,7 +99,7 @@ const BaptismAndBabyShowerSection = () => {
       {/* Static Category Cards - Side by Side */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Baptism Card */}
-        <div className="relative overflow-hidden group" style={{ aspectRatio: '1/1'}}>
+        <div className="relative overflow-hidden group">
           <img style={{ height:'100%'}}
             src="/images/wedding.png"
             alt="Baptism list inspiration"
